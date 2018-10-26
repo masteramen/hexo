@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "new postd"
+title: "new postde"
 title2: "new post"
 date: 2018-10-26 05:58:57  +0800
 source: ""
