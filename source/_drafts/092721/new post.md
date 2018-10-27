@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "new post"
-title2:  "new post"
-date:   2018-10-27 14:50:59  +0800
-source:  ""
-fileName:  "092721"
-lang:  "zh_CN"
+title: "new post"
+title2: "new post"
+date: 2018-10-27 14:50:59  +0800
+source: ""
+fileName: "092721"
+lang: "zh_CN"
 published: false
-
 ---
 
+### 什么是持续集成？
+
+持续集成源于极限编程（XP），是一种软件实践，软件开发过程中集成步骤是一个漫长并且无法预测的过程。集成过程中可能会爆发大量的问题，因此集成过程需要尽可能小而多，实际上持续集成讲的就是不断的去做软件的集成工作。最简单的做法就是使用监控版本变化的工具，当有变化时自动的编译构建和测试你的应用。
