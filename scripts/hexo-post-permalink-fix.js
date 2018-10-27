@@ -4,44 +4,43 @@
  * Place this script in your project/scripts directory (project/scripts/hexo-post-permalink-fix.js)
  */
 
-'use strict';
+"use strict";
 
-const fs = require('hexo-fs');
-const Promise = require('bluebird');
+const fs = require("hexo-fs");
+const Promise = require("bluebird");
 
-const glob = require('glob')
-const path = require('path')
+const glob = require("glob");
+const path = require("path");
 
 function postsAssetGenerater(locals) {
   const self = this;
 
   function process(name) {
     return glob
-    .sync('./source/_posts/**/**')
-    .filter(file => !/(.*)\.md$/.test(file) && fs.lstatSync(file).isFile()).map(file => {
+      .sync("./source/_posts/**/**")
+      .filter(file => !/(.*)\.md$/.test(file) && fs.lstatSync(file).isFile())
+      .map(file => {
+        const source = file;
+        let path = file.split("source/_posts/")[1];
+        const data = {
+          modified: false
+        };
 
-      const source = file;
-      let path = file.split('source/_posts/')[1];
-      const data = {
-        modified: false
-      };
+        data.data = () => fs.createReadStream(source);
 
-      data.data = () => fs.createReadStream(source);
-
-      return {
-        path,
-        data
-      };
-    });
+        return {
+          path,
+          data
+        };
+      });
   }
 
-  return Promise.all([
-    process(),
-  ]).then(data => Array.prototype.concat.apply([], data));
+  return Promise.all([process()]).then(data =>
+    Array.prototype.concat.apply([], data)
+  );
 }
-hexo.extend.generator.register('postsAsset',postsAssetGenerater);
+hexo.extend.generator.register("postsAsset", postsAssetGenerater);
 //let time = new Date().getTime();
-
 
 // 处理 post 中图片
 /*hexo.extend.processor.register("posts/*path", function(file) {
@@ -102,9 +101,10 @@ hexo.extend.filter.register("before_post_render", function(data) {
   var dir_post = path.join(this.source_dir, data.source);
   var pattern = /!\[(.*?)\]\((.*?)\)/g;
   data.content = data.content.replace(pattern, (match, alt, src) => {
-
     let path_img = path.resolve(dir_post, "..", src);
-    let src_new = path_img.replace(this.source_dir+'_posts', "").replace(/\\/g,'/');
+    let src_new = path_img
+      .replace(this.source_dir + "_posts", "")
+      .replace(/\\/g, "/");
 
     return `![${alt}](${src_new})`;
   });
@@ -112,11 +112,13 @@ hexo.extend.filter.register("before_post_render", function(data) {
   return data;
 });
 
-
 //将相对地址转为绝对地址
-hexo.extend.filter.register("before_post_render", function(data) {
+hexo.extend.filter.register(
+  "before_post_render",
+  function(data) {
+    data.env = this.env.env;
 
-  data.env = this.env.env;
-
-  return data;
-},15);
+    return data;
+  },
+  15
+);
