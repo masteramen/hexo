@@ -112,13 +112,14 @@ hexo.extend.filter.register("before_post_render", function(data) {
   return data;
 });
 
-//将相对地址转为绝对地址
-hexo.extend.filter.register(
+/*hexo.extend.filter.register(
   "before_post_render",
   function(data) {
     data.env = this.env.env;
+    console.log("env:");
+    console.log(data.env);
 
     return data;
   },
   15
-);
+);*/

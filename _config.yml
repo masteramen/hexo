@@ -82,4 +82,8 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  ? type
+  type: git
+  repo: "git@github.com:masteramen/blog.git"
+
+neat_enable: true
+exclude: ["*min.js", "min.css"]
