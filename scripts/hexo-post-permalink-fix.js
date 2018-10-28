@@ -123,3 +123,6 @@ hexo.extend.filter.register("before_post_render", function(data) {
   },
   15
 );*/
+hexo.on("server", function() {
+  hexo.config.showAd = false;
+});

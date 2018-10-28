@@ -88,3 +88,5 @@ deploy:
 
 neat_enable: true
 exclude: ["*min.js", "min.css"]
+
+showAd: true
