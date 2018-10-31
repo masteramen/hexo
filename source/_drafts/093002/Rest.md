@@ -91,3 +91,16 @@ Spring Cloud 为开发人员提供了快速构建分布式系统中一些常见�
 - SpringBootConfiguration
 - EnableAutoConfiguration
 - SpringBootApplication
+
+### Spring 有哪几种读取配置的方式
+
+- @PropertySource
+- @Value
+- @Environment
+- @ConfigurationProperties
+
+###Logger
+
+- java util logging
+- log4j2
+- logback
