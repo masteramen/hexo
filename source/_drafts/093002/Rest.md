@@ -35,3 +35,5 @@ Restful API 的设计就是通过 HTTP 的方法来表示 CRUD 的相关操作�
 Spring Data JPA 是 Spring 基于 Hiberate 开发的一个 JPA 框架。
 
 Spring Data 接口： CrudRepository
+
+JPQL 查询语言：通过面向对象而非面向数据库的查询语言，别买程序的 SQL 语句紧密耦合。
