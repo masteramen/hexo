@@ -53,3 +53,41 @@ innert join,等值联接：只返回两个表中联接字段相等的记录。
 - QBC
 - Native SQL(不能夸平台)
 - Transient, Persistent, Detached
+
+###Spring 支持的事务隔离级别
+
+- ISOLATION_DEFAULT : 使用数据库默认的隔离级别
+- read uncommit;
+- read commit;
+- repeatable read;
+- serializable
+
+### Oracle 查询执行计划的三种方法
+
+1. set autotrace on
+2. explain plan for sql
+3. sql developer 工具
+
+###Spring Cloud
+Spring Cloud 为开发人员提供了快速构建分布式系统中一些常见模式的工具，如
+
+- 配置管理
+- 服务发现与注册
+- 断路器
+- 智能代理
+- 智能路由
+- 负载均衡
+- 一次性令牌
+- 全局锁
+- 领导选举
+- 分布式会话
+- 集群状态
+- 分布式消息
+- 微代理
+- 控制总线
+
+### SpringBoot 核心注解
+
+- SpringBootConfiguration
+- EnableAutoConfiguration
+- SpringBootApplication
