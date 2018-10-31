@@ -29,3 +29,9 @@ Restful API 的设计就是通过 HTTP 的方法来表示 CRUD 的相关操作�
 - MockMvc
 
 ### JUnit and Mockito
+
+### Spring-Data-JPA JPA Hiberanate
+
+Spring Data JPA 是 Spring 基于 Hiberate 开发的一个 JPA 框架。
+
+Spring Data 接口： CrudRepository
