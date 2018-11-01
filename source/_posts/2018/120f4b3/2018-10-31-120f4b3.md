@@ -84,8 +84,8 @@ beanFactory 是 spring 框架的基础设施，是面向 spring 本身，Applica
 ## 装配方式
 
 1. 自动装配方式
-2. 使用 XML 装配方式
-3. 使用 JAVA 装配方式，Spring 的 Java 配置方式是通过 @Configuration 和 @Bean 注解实现的
+2. 使用 XML 方式
+3. 使用 JAVA Config 方式，Spring 的 Java Config 方式是通过 @Configuration 和 @Bean 注解实现的
 
 ## 选择原则
 
@@ -101,9 +101,11 @@ beanFactory 是 spring 框架的基础设施，是面向 spring 本身，Applica
 
 Bean 在 Spring 中的生命周期如下：
 
-实例化。Spring 通过 new 关键字将一个 Bean 进行实例化，JavaBean 都有默认的构造函数，因此不需要提供构造参数。
+1. 实例化,Spring 通过 new 关键字将一个 Bean 进行实例化，Java Bean 都有默认的构造函数，因此不需要提供构造参数。
 
-填入属性。Spring 根据 xml 文件中的配置通过调用 Bean 中的 setXXX 方法填入对应的属性。 事件通知。Spring 依次检查 Bean 是否实现了 BeanNameAware、BeanFactoryAware、ApplicationContextAware、BeanPostProcessor、InitializingBean 接口，如果有的话，依次调用这些接口。
+2. 注入依赖,Spring 根据 xml 文件中的配置通过调用 Bean 中的 setXXX 方法填入对应的属性。
+
+3. 事件通知，Spring 依次检查 Bean 是否实现了 BeanNameAware、BeanFactoryAware、ApplicationContextAware、BeanPostProcessor、InitializingBean 接口，如果有的话，依次调用这些接口。
 
 使用。应用程序可以正常使用这个 Bean 了。
 
