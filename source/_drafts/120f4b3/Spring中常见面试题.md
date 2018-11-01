@@ -79,15 +79,15 @@ beanFactory 是 spring 框架的基础设施，是面向 spring 本身，Applica
 
 3. 基于 Java 的配置： Spring 对 Java 配置的支持是由@Configuration 注解和@Bean 注解来实现的。由@Bean 注解的方法将会实例化、配置和初始化一个新对象，这个对象将由 Spring 的 IoC 容器来管理。@Bean 声明所起到的作用与元素类似。被@Configuration 所注解的类则表示这个类的主要目的是作为 bean 定义的资源。被@Configuration 声明的类可以通过在同一个类的内部调用@bean 方法来设置嵌入 bean 的依赖关系。
 
-# 三种装配方法及选择原则
+## 三种装配方法及选择原则
 
-## 装配方式
+### 装配方式
 
 1. 自动装配方式
 2. 使用 XML 方式
 3. 使用 JAVA Config 方式，Spring 的 Java Config 方式是通过 @Configuration 和 @Bean 注解实现的
 
-## 选择原则
+### 选择原则
 
 1. 最优先： 通过隐式 Bean 的发现机制和自动装配原则。基于约定配置的原则，应该优先使用。
 
@@ -95,9 +95,7 @@ beanFactory 是 spring 框架的基础设施，是面向 spring 本身，Applica
 
 3. 最后才是 XML 方式配置。 在上述方式都无法使用的情况下，只能选择基于 XML 方式的配置。
 
----
-
-# Spring Bean 的生命周期
+## Spring Bean 的生命周期
 
 Bean 在 Spring 中的生命周期如下：
 
@@ -107,29 +105,29 @@ Bean 在 Spring 中的生命周期如下：
 
 3. 事件通知，Spring 依次检查 Bean 是否实现了 BeanNameAware、BeanFactoryAware、ApplicationContextAware、BeanPostProcessor、InitializingBean 接口，如果有的话，依次调用这些接口。
 
-使用。应用程序可以正常使用这个 Bean 了。
+4. 使用，应用程序可以正常使用这个 Bean 了。
 
 销毁。如果 Bean 实现了 DisposableBean 接口，就调用其 destroy 方法。
 
-### ---加载过程---
+### 加载过程
 
-1.容器寻找 Bean 的定义信息并且将其实例化。
+1. 容器寻找 Bean 的定义信息并且将其实例化。
 
-2.如果允许提前暴露工厂，则提前暴露这个 bean 的工厂，这个工厂主要是返回该未完全处理的 bean．主要是用于避免单例属性循环依赖问题．
+2. 如果允许提前暴露工厂，则提前暴露这个 bean 的工厂，这个工厂主要是返回该未完全处理的 bean．主要是用于避免单例属性循环依赖问题．
 
-3.受用依赖注入，Spring 按照 Bean 定义信息配置 Bean 的所有属性。
+3. 受用依赖注入，Spring 按照 Bean 定义信息配置 Bean 的所有属性。
 
-4.如果 Bean 实现了 BeanNameAware 接口，工厂调用 Bean 的 setBeanName()方法传递 Bean 的 ID。
+4. 如果 Bean 实现了 BeanNameAware 接口，工厂调用 Bean 的 setBeanName()方法传递 Bean 的 ID。
 
-5.如果 Bean 实现了 BeanFactoryAware 接口，工厂调用 setBeanFactory()方法传入工厂自身。
+5. 如果 Bean 实现了 BeanFactoryAware 接口，工厂调用 setBeanFactory()方法传入工厂自身。
 
-6.如果 BeanPostProcessor 和 Bean 关联，那么它们的 postProcessBeforeInitialzation()方法将被调用。
+6. 如果 BeanPostProcessor 和 Bean 关联，那么它们的 postProcessBeforeInitialzation()方法将被调用。
 
-7.如果 Bean 指定了 init-method 方法，它将被调用。
+7. 如果 Bean 指定了 init-method 方法，它将被调用。
 
-8.如果有 BeanPostProcessor 和 Bean 关联，那么它们的 postProcessAfterInitialization()方法将被调用
+8. 如果有 BeanPostProcessor 和 Bean 关联，那么它们的 postProcessAfterInitialization()方法将被调用
 
-9.最后如果配置了 destroy-method 方法则注册 DisposableBean.
+9. 最后如果配置了 destroy-method 方法则注册 DisposableBean.
 
 到这个时候，Bean 已经可以被应用系统使用了，并且将被保留在 Bean Factory 中知道它不再需要。 有两种方法可以把它从 Bean Factory 中删除掉。
 
