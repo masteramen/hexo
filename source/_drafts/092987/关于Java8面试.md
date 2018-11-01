@@ -35,3 +35,11 @@ Alice -> Bob: Another authentication Request
 Alice <-- Bob: another authentication Response
 @enduml
 ```
+
+我想问一下，我面试的这个职位公司对面试人的技能有哪些要求？
+
+公司希望面试人具有哪些能力？
+
+什么样能力的人才能胜任这个职位？
+
+垃圾回收 是 JAVA 中自动内存管理的另一种说法。
