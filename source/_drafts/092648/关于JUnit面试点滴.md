@@ -1,12 +1,11 @@
 ---
-layout: post
-title: "关于JUnit面试点滴"
-title2: "关于JUnit面试点滴"
-date: 2018-10-26 08:17:17  +0800
+title: "关于JUnit面试点滴"
+title2: "关于JUnit面试点滴"
+date: 2018-10-26 08:17:17 +0800
 source: ""
 fileName: "092648"
 lang: "zh_CN"
-published: false
+published: true
 ---
 
 单元测试就是编写测试代码的准确性。
