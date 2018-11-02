@@ -6,14 +6,16 @@ date: 2018-10-30 03:12:15  +0800
 source: ""
 fileName: "093002"
 lang: "zh_CN"
-published: false
+published: true
 ---
 
 ### 什么是 REST?
 
 REST 全称 REpresentation State Transfer（表现层状态转移）
 
-### 什么是资源？
+### 关于资源
+
+RESTful 架构有一些典型的设计误区，就是 URI 包含动词。因为”资源”表示一种实体，所以应该是名词，URI 不应该有动词，动词应该放在 HTTP 协议中。 上面设计的 API 的 URI 中都是名词。
 
 ### 什么是安全的 Rest 操作？
 

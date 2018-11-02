@@ -12,3 +12,5 @@ published: false
 ## HTTP 状态码
 
 - 200 OK
+  https://www.xncoding.com/
+  http://www.nafanlong.com/2679.html
