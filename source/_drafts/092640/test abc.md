@@ -14,3 +14,4 @@ published: false
 - 200 OK
   https://www.xncoding.com/
   http://www.nafanlong.com/2679.html
+  https://www.java-success.com/spring-javaconfig-configuration-and-transactionmanager/
