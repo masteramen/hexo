@@ -16,8 +16,7 @@ JUnit 是 Java 单元测试框架
 - @Before 在测试方法运行之前运行
 - @Test 测试方法
 - @After 在测试方法运行之后
-- @AfterClass
-- @Ignore
+- @AfterC
 
 ### JUnit 测试方法的流程
 
