@@ -10,3 +10,5 @@ published: false
 ---
 
 ## How configuration meta data is provided to the spring container
+
+- XML-Based configuration: In Spring Framework,the dependencies and the service needed by beans are specified in configuration files which are in XML format. These configuration files usually contains a lot of bean definitions and application specific configuration options. They generally start with a bean tag.
