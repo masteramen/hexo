@@ -25,3 +25,13 @@ Lombok
 ActiveMQ and Rabbit MQ
 
 高级消息队列协议
+
+rownumber or offset or row_number or minus
+
+oracle 12C:
+offset 0 rows fetch next 5 rows only
+
+- powerful , open source application framework
+- light-weighted and loosely coupled
+
+Data Access/Intergration
