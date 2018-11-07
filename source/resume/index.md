@@ -145,7 +145,7 @@ a.arrow-button {
   - Design , implement the database table,help write and optimize in-application SQL statements.
   - Prepare documentations and specifications
 
-## 07/2008 – 04/2011 Junior Software Engineer(JAVA) (ShenZhen, China)
+## 07/2008 – 04/2011 Junior Software Engineer(JAVA), ISS ACCESS iVisions Ltd. (ShenZhen, China)
 
 **Relative Projects:**
 
