@@ -14,8 +14,17 @@ published: false
 Notifications can be a godsend or the bane of our existence these days.  Every app you install on your phone wants access to notifications, as do desktop apps, and now we have a [Web Notifications API](https://davidwalsh.name/notifications-api) along with a [Web Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API),  just in case you don't already have enough notifications in your life.  Appointment reminders from Calendar are always welcome (I'd otherwise forget every event) but does Wacky Mini Golf really need to notify me that I haven't played in 4 days?  Probably not.
 如今，通知可能是天赐之物或我们存在的祸根。您在手机上安装的每个应用都需要访问通知，桌面应用也是如此，现在我们有[Web Notifications API]（https://davidwalsh.name/notifications-api）和[Web Push API]（https ：//developer.mozilla.org/en-US/docs/Web/API/Push_API），以防万一你的生活中没有足够的通知。欢迎来自日历的预约提醒（否则我会忘记每一个活动）但是 Wacky Mini Golf 真的需要通知我我 4 天没玩过吗？可能不是。(zh_CN)
 
-Anyways, I was thinking about notifications and how I could use them to remember stuff I needed to do at a certain time during the current day; i.e. remind myself to go eat lunch, go for a bike ride, or go pick my son up from school on the odd day.  Being a JavaScript nerd I decided to look into creating Mac notifications using Node.js and I quickly found my answer: [`node-notifier`](https://github.com/mikaelbr/node-notifier)!  Let's take a look!
-无论如何，我正在考虑通知以及如何使用它们来记住我在当天某个时间需要做的事情;即提醒自己去吃午饭，去骑自行车，或者在奇怪的一天从学校接我的儿子。作为一个 JavaScript 书呆子我决定使用 Node.js 创建 Mac 通知，我很快找到了答案：[`node-notifier`](https://github.com/mikaelbr/node-notifier）！让我们来看看！(zh_CN)
+Anyways, I was thinking about notifications and how I could use them to remember stuff I needed to do at 1. How many interviewers did you meet?
+2.Who are they?
+
+3. What questions (general / technical) they asked for (grateful if you share more in detail with me)?
+4. Did they share the role with you? (i.e.Duties or software using, grateful if you share more details with me)
+5. How long did you meet them?
+6. Are you interested in the role?
+7. Did you answer then well? And what do you think your performance?
+8. Did they discuss salary, work location, etc. with you?
+9. If they give you offer, will you accept it?a certain time during the current day; i.e. remind myself to go eat lunch, go for a bike ride, or go pick my son up from school on the odd day.  Being a JavaScript nerd I decided to look into creating Mac notifications using Node.js and I quickly found my answer: [`node-notifier`](https://github.com/mikaelbr/node-notifier)!  Let's take a look!
+   无论如何，我正在考虑通知以及如何使用它们来记住我在当天某个时间需要做的事情;即提醒自己去吃午饭，去骑自行车，或者在奇怪的一天从学校接我的儿子。作为一个 JavaScript 书呆子我决定使用 Node.js 创建 Mac 通知，我很快找到了答案：[`node-notifier`](https://github.com/mikaelbr/node-notifier）！让我们来看看！(zh_CN)
 
 Create a Simple Notification
 创建简单通知(zh_CN)
