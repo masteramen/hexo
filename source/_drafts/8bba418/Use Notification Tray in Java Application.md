@@ -29,3 +29,5 @@ Run and enjoy hopefully it work well for you.
 
 https://stackoverflow.com/questions/21181758/how-to-show-an-alert-message-using-swt
 https://github.com/lcaron/opal
+
+http://www.blogjava.net/liaojiyong/archive/2007/01/12/93457.html
