@@ -31,3 +31,13 @@ https://stackoverflow.com/questions/21181758/how-to-show-an-alert-message-using-
 https://github.com/lcaron/opal
 
 http://www.blogjava.net/liaojiyong/archive/2007/01/12/93457.html
+
+https://stackoverflow.com/questions/1970876/system-tray-menu-extras-icon-in-mac-os-using-java
+
+https://github.com/jcgay/send-notification
+
+http://git.eclipse.org/c/platform/eclipse.platform.swt.git/tree/examples/org.eclipse.swt.snippets/src/org/eclipse/swt/snippets/Snippet143.java
+
+https://superuser.com/questions/666184/mac-run-java-program-at-launch
+
+https://stackoverflow.com/questions/9680603/how-to-registerinstall-as-service-java-application-with-jsvc-wrapper-on-macos
