@@ -35,3 +35,5 @@ offset 0 rows fetch next 5 rows only
 - light-weighted and loosely coupled
 
 Data Access/Intergration
+
+http://www.ityouknow.com/springboot/2018/06/12/spring-boo-java-simple.html
